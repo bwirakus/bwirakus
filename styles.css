@@ -1,3 +1,9 @@
+/------------font-family------------/
+h1 {
+  font-family: 'Inclusive Sans', Arial, sans-serif;
+  font-weight: 400;
+}
+
 /------------headernav------------/
 
 .header-left a{
@@ -108,6 +114,7 @@ nav ul li a:active {
 .gallery figure {
   margin: 0;
   overflow: hidden;
+  text-align: center;
 }
 
 /* Image behavior */
