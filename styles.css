@@ -11,9 +11,8 @@ body {
   font-weight: 400;
   background-color: transparent; /* or the real background behind the gallery */
 }
-}
 
-/------------headernav------------/
+/*------------headernav------------*/
 
 .header-left a{
   font-family: 'Teranoptia';
@@ -52,7 +51,6 @@ nav {
   align-items: center;            
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;                  
   z-index: 100;
   background: transparent;        
@@ -63,7 +61,7 @@ nav {
 
 nav ul {
   display: flex;
-  font-size: 3.7vw;
+  font-size: 2em;
   font-weight: 100;
   letter-spacing: 0.5px;
   margin: 0;
@@ -85,6 +83,7 @@ nav ul li a {
   text-decoration: none;
   padding-left: 2vw;
   color: black;
+  font-size: 2.5vw;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
@@ -105,43 +104,43 @@ nav ul li a:active {
   background-color: #26f268;
 }
 
-/------------gallery------------/
+/* ---------------- font & page ---------------- */
+body {
+  font-family: 'Inclusive Sans', Arial, sans-serif;
+  font-weight: 400;
+  background-color: #e9f7ee; /* page color */
+  padding-top: 3vw;          /* leave space for fixed nav */
+  margin: 0;
+}
 
+/* ---------------- gallery ---------------- */
 :root {
   --gap: 1.5rem;
 }
 
-/* ===== GALLERY GRID ===== */
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   gap: var(--gap);
-  margin: 2rem 0; 
+  margin: 2rem 0;
   background-color: transparent;
 }
 
-/* Reset default spacing */
 .gallery figure {
   margin: 0;
-  overflow: hidden;
   text-align: center;
   background-color: transparent;
 }
 
-/* Image behavior */
 .gallery img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* Optional: better reading width */
 section {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 1rem;
-}
-
-section.gallery {
-  background-color: transparent; /* parent of grid */
+  background-color: transparent;
 }
