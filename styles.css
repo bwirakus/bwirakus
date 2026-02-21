@@ -8,7 +8,7 @@ body {
   background-color: #e9f7ee;  /* mint background */
   font-family: 'Inclusive Sans', Arial, sans-serif;
   font-weight: 400;
-  padding-top: 2vw;           /* leave space for fixed nav */
+  padding-top: 3vw;           /* leave space for fixed nav */
   margin: 10vw;
 }
 
