@@ -1,7 +1,16 @@
-/------------font-family------------/
+/------------font-family-and-page------------/
 h1 {
   font-family: 'Inclusive Sans', Arial, sans-serif;
   font-weight: 400;
+  color: red;
+}
+
+/* Set the default font for everything */
+body {
+  font-family: 'Inclusive Sans', Arial, sans-serif;
+  font-weight: 400;
+  background-color: transparent; /* or the real background behind the gallery */
+}
 }
 
 /------------headernav------------/
@@ -107,7 +116,8 @@ nav ul li a:active {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
   gap: var(--gap);
-  margin: 2rem 0;
+  margin: 2rem 0; 
+  background-color: transparent;
 }
 
 /* Reset default spacing */
@@ -115,6 +125,7 @@ nav ul li a:active {
   margin: 0;
   overflow: hidden;
   text-align: center;
+  background-color: transparent;
 }
 
 /* Image behavior */
@@ -129,4 +140,8 @@ section {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 1rem;
+}
+
+section.gallery {
+  background-color: transparent; /* parent of grid */
 }
