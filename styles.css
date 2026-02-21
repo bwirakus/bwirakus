@@ -5,11 +5,12 @@ h1 {
   color: red;
 }
 
-/* Set the default font for everything */
 body {
+  background-color: #e9f7ee;  /* mint background */
   font-family: 'Inclusive Sans', Arial, sans-serif;
   font-weight: 400;
-  background-color: transparent; /* or the real background behind the gallery */
+  padding-top: 2vw;           /* leave space for fixed nav */
+  margin: 0;
 }
 
 * a {
@@ -41,88 +42,67 @@ a:hover {
   color: white;
 }
 
-.header-left > * {
-  flex-shrink: 0; 
-  margin: 0;
-  padding: 0;
-}
-
-.site-name {
-  font-family: 'Inclusive Sans', serif;
-  font-size: 2.5em;
-  font-weight: 700;
-  margin: 0;
-  line-height: 1.2;
-  color: black;
-}
-
-/* ---------------- header ---------------- */
+/* -------- Header -------- */
 .page-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-between;  /* left: name+logo, right: nav */
+  align-items: center;            /* vertical center */
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 100;
-  background: transparent;
-  padding: 0 1rem;       /* same as gallery section */
+  padding: 0 1rem;
   box-sizing: border-box;
+  background: transparent;
+  z-index: 100;
 }
 
-/* Make nav match gallery width */
-nav {
-  max-width: 1400px; /* same as gallery */
-  width: 100%;
-  margin: 0 auto;    /* center nav */
-  padding: 0 1rem;   /* same horizontal padding as gallery section */
-  box-sizing: border-box;
+/* -------- Header Left: Name + Logo Inline -------- */
+.header-left {
+  display: flex;          /* horizontal layout */
+  align-items: center;    /* vertically align logo and text */
+  gap: 0.5rem;            /* space between text and logo */
 }
+
+.header-left .site-name {
+  font-family: 'Inclusive Sans', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1;         /* ensures no extra vertical space */
+}
+
+.header-left .header-logo {
+  display: block;         /* ensure it behaves as flex item */
+  height: 3rem;           /* match the text size */
+  width: auto;            /* keep aspect ratio */
+  object-fit: contain;    /* avoids stretching */
+}
+
+/* -------- Navigation -------- */
+nav {
+  display: flex;
+  align-items: center;
+}
+
 nav ul {
   display: flex;
   justify-content: flex-end;
   list-style: none;
   margin: 0;
-  padding: 0 1rem;
-  gap: 2vw; /* space between nav items */
-}
-nav ul li {
-  list-style: none;
+  padding: 0.5vw;
+  gap: 1vw;
 }
 
 nav ul li a {
-  display: inline-block;
   text-decoration: none;
-  padding-left: 2vw;
   color: black;
   font-size: 2.5vw;
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-nav ul li a:visited {
-  color: black;
-}
-
-.page-header div{
-  display: inline-block;
-}
-
 nav ul li a:hover {
-  background-color: #26f268; 
-  color: white;
-}
-
-nav ul li a:active {
   background-color: #26f268;
-}
-
-/* ---------------- font & page ---------------- */
-body {
-  font-family: 'Inclusive Sans', Arial, sans-serif;
-  font-weight: 400;
-  background-color: #e9f7ee; /* page color */
-  padding-top: 3vw;          /* leave space for fixed nav */
-  margin: 0;
+  color: white;
 }
 
 /* ---------------- gallery ---------------- */
