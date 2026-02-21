@@ -5,11 +5,10 @@ h1 {
 }
 
 body {
-  background-color: #e9f7ee;  /* mint background */
+  background-color: #e9f7ee; 
   font-family: 'Inclusive Sans', Arial, sans-serif;
   font-weight: 400;
-  padding-top: 3vw;           /* leave space for fixed nav */
-  margin: 10vw;
+  padding-top: 3vw;          
 }
 
 * a {
@@ -137,6 +136,5 @@ nav ul li a:hover {
 section {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 1rem;
   background-color: transparent;
 }
