@@ -8,7 +8,15 @@ body {
   background-color: #e9f7ee; 
   font-family: 'Inclusive Sans', Arial, sans-serif;
   font-weight: 400;
-  padding-top: 3vw;          
+  padding-top: 3vw;  
+}
+
+p {
+  margin-right: 50vw;
+  margin-left: 1.5vw;
+  margin-top: 2vw;
+  padding-bottom: 5vw;
+  font-size: 1.5em;
 }
 
 * a {
@@ -137,4 +145,10 @@ section {
   max-width: 1400px;
   margin: 0 auto;
   background-color: transparent;
+}
+
+/* ---------------- project pages ---------------- */
+
+.project-image {
+  margin-left: 1.5vw;
 }
