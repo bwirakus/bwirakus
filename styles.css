@@ -1,3 +1,6 @@
+/* ---------------- media ---------------- */
+
+
 /*------------font-family-and-page------------*/
 h1 {
   font-family: 'Inclusive Sans', Arial, sans-serif;
@@ -12,10 +15,11 @@ body {
 }
 
 p {
-  margin-right: 50vw;
+  margin-right: 40vw;
   margin-left: 1.5vw;
   margin-top: 2vw;
-  padding-bottom: 5vw;
+  text-align: justify;
+  text-justify: inter-word;
   font-size: 1.5em;
 }
 
@@ -151,4 +155,9 @@ section {
 
 .project-image {
   margin-left: 1.5vw;
+}
+
+/* ---------------- bio ---------------- */
+
+.bio p {
 }
