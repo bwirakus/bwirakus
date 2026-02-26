@@ -27,6 +27,12 @@ a:hover {
   color:  #26f268;
 }
 
+.embeded-pdf {
+  margin: 1.5vw;
+  width: 50%;
+  height: 600px;
+}
+
 /*------------headernav------------*/
 
 .header-logo {
