@@ -4,7 +4,9 @@
 /*------------font-family-and-page------------*/
 h1 {
   font-family: 'Inclusive Sans', Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
+  margin: 1.5vw;
+  font-style: italic;
 }
 
 body {
